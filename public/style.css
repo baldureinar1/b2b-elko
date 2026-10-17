@@ -75,3 +75,7 @@ footer { position: relative; padding: clamp(20px, 2vw, 70px) 0; }
 .qr-url { display: inline-flex; align-items: center; gap: 12px; color: #9ac967; margin-top: .35em; }
 .qr-url svg { font-size: .8em; }
 @media (max-width: 900px) { .hero-bottom { align-items: flex-start; flex-direction: column; gap: 28px; } .qr-panel { position: static; } }
+
+.header-site { display: inline-flex; align-items: center; gap: 16px; min-height: 64px; white-space: nowrap; font-size: var(--small); text-shadow: 0 2px 8px #0005; opacity: .85; transition: opacity .25s; }
+.header-site svg { color: #9ac967; font-size: .8em; }
+.header-site:hover { opacity: 1; }
