@@ -42,4 +42,4 @@ Branch-based Pages publishing from `main` → `/ (root)` uses the root `index.ht
 
 ## QR panel
 
-The phone panel links to `https://elko.is/b2b`. Its QR code is stored locally at `public/images/b2b-qr.svg`, uses medium error correction, and includes a four-module white quiet zone. There is no QR service, tracking redirect, or runtime dependency. Keep the QR stationary and high contrast when restyling it. If the destination changes, regenerate the SVG and update the panel link, visible URL, and accessible label together.
+The phone panel links to `https://elko.is/minar/fyrirtaeki` so visitors can sign in to their business account on their own phone. Its QR code is stored locally at `public/images/b2b-qr.svg`, uses medium error correction, and includes a four-module white quiet zone. There is no QR service, tracking redirect, or runtime dependency. Keep the QR stationary and high contrast when restyling it. If the destination changes, regenerate the SVG and update the panel link, visible URL, and accessible label together.
