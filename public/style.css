@@ -40,9 +40,10 @@ h1 { width: 100%; text-align: left; margin: 0; position: relative; z-index: 1; f
 .orbit-inner { position: absolute; inset: 13%; border: 1px solid #6aa3341a; border-radius: 50%; animation: orbit 90s linear infinite reverse; }
 .orbit-inner::before { content: ''; position: absolute; inset: -1px; padding: 1px; border-radius: 50%; background: conic-gradient(from 150deg, transparent 0deg 180deg, #7fa4ff38 255deg, transparent 320deg); mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0); }
 
+.orbit-inner::after { content: ''; position: absolute; width: 1.7vw; aspect-ratio: 1.5; top: 50%; right: 0; translate: 50% -50%; border-radius: 50%; opacity: .32; background: radial-gradient(ellipse, #b4d99380 0%, #6aa33440 25%, #6288cf18 50%, transparent 72%); filter: blur(2px); }
 .orbit::after { content: ''; position: absolute; inset: -12%; border-radius: 50%; background: radial-gradient(ellipse at 65% 40%, #4674d51a, transparent 58%), radial-gradient(ellipse at 40% 65%, #6aa3340d, transparent 50%); animation: orbit-breathe 16s ease-in-out infinite alternate; }
 .orbit-dot { position: absolute; inset: 0; border-radius: 50%; animation: orbit 48s linear infinite; }
-.orbit-dot::before { content: ''; position: absolute; width: 2.6vw; aspect-ratio: 1.5; top: 50%; left: 0; translate: -50% -50%; border-radius: 50%; opacity: .38; background: radial-gradient(ellipse, #b4d99380 0%, #6aa33440 25%, #6288cf18 50%, transparent 72%); filter: blur(2px); }
+.orbit-dot::before { content: ''; position: absolute; width: 3.1vw; aspect-ratio: 1.5; top: 50%; left: 0; translate: -50% -50%; border-radius: 50%; opacity: .38; background: radial-gradient(ellipse, #b4d99380 0%, #6aa33440 25%, #6288cf18 50%, transparent 72%); filter: blur(2px); }
 @keyframes orbit-breathe { from { opacity: .45; transform: scale(.94); } to { opacity: .9; transform: scale(1.06); } }
 
 footer { position: relative; padding: clamp(20px, 2vw, 70px) 0; }
@@ -61,5 +62,5 @@ footer { position: relative; padding: clamp(20px, 2vw, 70px) 0; }
 @keyframes ripple { from { opacity: .8; transform: scale(.15); } to { opacity: 0; transform: scale(1.5); } }
 @media (min-width: 701px) and (max-height: 900px) { header { padding: 14px 0; } main { padding: 8px 0 24px; } .title-brand img { width: 20vw; } footer { padding: 18px 0; } }
 @media (max-width: 900px) { .service-links { grid-template-columns: 1fr; } .service-links a { min-height: 80px; } }
-@media (max-width: 700px) { .page { padding: 0 7%; } header { align-items: flex-start; } .header-contact { gap: 0 20px; } .header-contact a { min-height: 48px; font-size: 20px; } .fullscreen { width: 54px; } .title-brand img { width: 55vw; } .title-service { font-size: 12vw; } .orbit { width: 60vw; } .orbit-dot::before { width: 5vw; } main { padding: 24px 0; } }
+@media (max-width: 700px) { .page { padding: 0 7%; } header { align-items: flex-start; } .header-contact { gap: 0 20px; } .header-contact a { min-height: 48px; font-size: 20px; } .fullscreen { width: 54px; } .title-brand img { width: 55vw; } .title-service { font-size: 12vw; } .orbit { width: 60vw; } .orbit-dot::before { width: 6vw; } .orbit-inner::after { width: 3.5vw; } main { padding: 24px 0; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } .touch-ripple { display: none; } }
