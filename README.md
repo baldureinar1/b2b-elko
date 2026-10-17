@@ -14,6 +14,6 @@ The server listens on port 3000 (override with `PORT`). Static production files 
 
 ## Brand assets
 
-The page uses the supplied white-and-green ELKO logo in the header and main heading, copied unchanged to `public/logos/elko-white.png`. The palette follows the supplied brand reference: Sushi green `#6AA334`, white `#FFFFFF`, and Deep Cove blue `#0F054D`. Original logo assets remain in `logos/`.
+The page uses the supplied white-and-green ELKO logo in the main heading, copied unchanged to `public/logos/elko-white.png`. The palette follows the supplied brand reference: Sushi green `#6AA334`, white `#FFFFFF`, and Deep Cove blue `#0F054D`. Original logo assets remain in `logos/`.
 
-Text uses Arial consistently for Icelandic character support. The supplied Elkjøp font lacks Þ, þ, Ð, and ð, so it is retained in the repository but is not loaded by the page. Original font files and license information remain in `font/`.
+The main “Fyrirtækjaráðgjöf” heading uses Arial for consistent Icelandic character support. Smaller text uses the supplied Elkjøp font, with Arial fallback for its missing Þ, þ, Ð, and ð characters. Original font files and license information remain in `font/`.
