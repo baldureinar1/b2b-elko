@@ -10,13 +10,11 @@ body { margin: 0; color: var(--white); font-family: Arial, Helvetica, sans-serif
 a { color: inherit; text-decoration: none; }
 a:focus-visible { outline: 2px solid var(--green); outline-offset: 8px; }
 .page { max-width: 1800px; min-height: 100svh; margin: auto; padding: 0 5.2%; display: flex; flex-direction: column; position: relative; }
-.ambient { position: fixed; inset: 0; overflow: hidden; pointer-events: none; background: radial-gradient(ellipse at 75% 70%, #6aa33422, transparent 62%), var(--navy); }
+.ambient { position: fixed; inset: 0; overflow: hidden; pointer-events: none; background: radial-gradient(ellipse at 78% 35%, #122b7970, transparent 58%), radial-gradient(ellipse at 20% 90%, #17206155, transparent 65%), linear-gradient(145deg, #0f054d 0%, #080e30 55%, #030615 100%); }
 .glow { position: absolute; border-radius: 50%; filter: blur(90px); animation: drift 18s ease-in-out infinite alternate; }
-.glow-one { width: 48vw; height: 48vw; right: -22%; top: 20%; background: #6aa33425; }
-.glow-two { width: 38vw; height: 38vw; left: 10%; bottom: -35%; background: #6aa33430; animation-delay: -9s; }
-header { display: flex; justify-content: space-between; align-items: center; padding: 36px 0; }
-.wordmark { display: block; line-height: 0; }
-.wordmark img { display: block; width: 112px; height: auto; }
+.glow-one { width: 48vw; height: 48vw; right: -22%; top: 20%; background: #153c9b45; }
+.glow-two { width: 38vw; height: 38vw; left: 10%; bottom: -35%; background: #162a7850; animation-delay: -9s; }
+header { display: flex; justify-content: flex-end; align-items: center; padding: 36px 0; }
 .header-link { font-size: 13px; font-weight: 600; display: flex; gap: 35px; align-items: center; }
 .header-link span { color: var(--green); font-size: 22px; }
 main { position: relative; flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 50px 0 80px; }
@@ -28,7 +26,7 @@ h1 { margin: 0; position: relative; z-index: 1; font-weight: 700; }
   display: block;
   width: 100%;
   padding: .16em .02em .22em 0;
-  font-size: clamp(32px, 7.4vw, 120px);
+  font-size: clamp(36px, 9.4vw, 156px);
   line-height: 1.25;
   letter-spacing: -.045em;
   color: var(--green);
@@ -57,12 +55,11 @@ footer a span { color: var(--green); margin-left: 10px; }
 @media (max-width: 700px) {
   .page { padding: 0 7%; }
   header { padding: 27px 0; }
-  .wordmark img { width: 90px; }
   .header-link { font-size: 11px; gap: 14px; }
   main { padding: 45px 0 65px; }
   .title-brand img { width: clamp(185px, 49vw, 300px); }
   .title-brand { margin-bottom: 20px; }
-  .title-service { font-size: clamp(28px, 8vw, 56px); }
+  .title-service { font-size: clamp(38px, 12vw, 80px); }
   .hero-bottom { margin-top: 20px; }
   .cta { font-size: 13px; padding-left: 22px; gap: 28px; }
   .orbit { width: 110px; height: 110px; bottom: 10px; }
