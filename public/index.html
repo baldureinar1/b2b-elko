@@ -8,6 +8,7 @@
   <title>ELKO Fyrirtækjaráðgjöf</title>
   <link rel="icon" type="image/png" href="/logos/elko-white.png">
   <link rel="stylesheet" href="/style.css">
+  <script src="/screen.js" defer></script>
 </head>
 <body>
   <div class="ambient" aria-hidden="true"><div class="glow glow-one"></div><div class="glow glow-two"></div></div>
@@ -17,7 +18,10 @@
         <a href="mailto:b2b@elko.is">b2b@elko.is</a>
         <a href="tel:+3545444000" aria-label="Sími 544 4000">544 4000</a>
       </address>
-      <a class="header-link" href="https://elko.is/b2b">Fyrir fyrirtæki <span aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>
+      <div class="header-actions">
+        <a class="header-link" href="https://elko.is/b2b">Fyrir fyrirtæki <span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>
+        <button class="fullscreen" type="button" aria-label="Opna í fullum skjá" aria-pressed="false" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button>
+      </div>
     </header>
     <main>
       <h1><span class="title-brand"><img src="/logos/elko-white.png" alt="ELKO" width="2839" height="1422" fetchpriority="high"></span><span class="title-service">Fyrirtækja<wbr>ráðgjöf</span></h1>
@@ -27,13 +31,13 @@
       <div class="orbit" aria-hidden="true"><div class="orbit-inner"></div><span class="orbit-dot"></span></div>
     </main>
     <footer>
-      <nav class="footer-links" aria-label="Þjónusta fyrir fyrirtæki">
-        <a href="https://elko.is/b2b/reikningsvidskipti">Reikningsviðskipti</a>
-        <a href="https://elko.is/b2b/reikningsvidskipti#nyskraning-fyrirtaekjab2b">Nýskráning fyrirtækja</a>
-        <a href="https://elko.is/b2b#fyrirtaekjaradgjof">Fyrirtækjaráðgjöf</a>
+      <nav class="service-links" aria-label="Þjónusta fyrir fyrirtæki">
+        <a href="https://elko.is/b2b/reikningsvidskipti"><span>Reikningsviðskipti</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+        <a href="https://elko.is/b2b/reikningsvidskipti#nyskraning-fyrirtaekjab2b"><span>Nýskráning fyrirtækja</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+        <a href="https://elko.is/b2b#fyrirtaekjaradgjof"><span>Fyrirtækjaráðgjöf</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
       </nav>
-      <a class="footer-site" href="https://elko.is/b2b">elko.is/b2b <span aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>
     </footer>
+    <p class="screen-status" role="status"></p>
   </div>
 </body>
 </html>
