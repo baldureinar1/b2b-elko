@@ -76,8 +76,5 @@ footer { position: relative; padding: clamp(20px, 2vw, 70px) 0; }
 .qr-url svg { font-size: .8em; }
 @media (max-width: 900px) { .hero-bottom { align-items: flex-start; flex-direction: column; gap: 28px; } .qr-panel { position: static; } }
 
-.primary-action { position: relative; display: flex; flex-direction: column; align-items: flex-start; }
-.action-url { position: absolute; top: calc(100% + 6px); left: 0; white-space: nowrap; display: inline-flex; align-items: center; min-height: 40px; padding-inline: 30px; font-size: var(--small); color: #d1d9ec; opacity: .8; transition: opacity .25s; }
-.action-url:hover { opacity: 1; }
-
-@media (min-width: 701px) and (max-height: 900px) { .action-url { min-height: 32px; } }
+.cta-copy { display: flex; flex-direction: column; align-items: flex-start; gap: .1em; line-height: 1.15; }
+.cta-url { font-size: .75em; font-weight: 400; opacity: .8; }
