@@ -24,7 +24,7 @@ a:focus-visible { outline: 2px solid var(--green); outline-offset: 8px; }
 header { display: flex; justify-content: flex-end; align-items: center; padding: 36px 0; }
 .header-link { font-size: 13px; font-weight: 600; display: flex; gap: 35px; align-items: center; }
 .header-link span { color: var(--green); font-size: 22px; }
-main { position: relative; flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 50px 0 80px; }
+main { position: relative; isolation: isolate; flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 50px 0 80px; }
 h1 { margin: 0; position: relative; z-index: 1; font-weight: 700; }
 .title-brand { display: block; margin-bottom: 16px; animation: enter 1s both; }
 .title-brand img { display: block; width: clamp(200px, 29vw, 430px); height: auto; }
@@ -50,9 +50,9 @@ h1 { margin: 0; position: relative; z-index: 1; font-weight: 700; }
 .cta:hover { background: #7db747; transform: translateY(-3px); }
 .arrow { display: grid; place-items: center; width: 38px; height: 38px; background: var(--navy); color: var(--green); border-radius: 50%; font-size: 24px; transition: transform .2s; }
 .cta:hover .arrow { transform: rotate(45deg); }
-.orbit { position: absolute; width: clamp(320px, 28vw, 440px); aspect-ratio: 1; right: 0; bottom: 20px; animation: orbit 35s linear infinite; border: 1px solid #6aa3341c; border-radius: 50%; pointer-events: none; }
+.orbit { position: absolute; width: clamp(320px, 28vw, 440px); aspect-ratio: 1; right: 8%; top: 60%; translate: 0 -50%; z-index: 0; animation: orbit 35s linear infinite; border: 1px solid #6aa3341c; border-radius: 50%; pointer-events: none; }
 .orbit-inner { position: absolute; inset: 14%; border: 1px solid #6aa33412; border-radius: 50%; }
-.orbit-dot { position: absolute; width: 8px; height: 8px; border-radius: 50%; background: var(--green); top: calc(50% - 4px); left: -4px; box-shadow: 0 0 22px #6aa33477; }
+.orbit-dot { position: absolute; width: 42px; height: 42px; border-radius: 50%; background: var(--green); top: calc(50% - 21px); left: -21px; box-shadow: 0 0 35px #6aa33455; }
 footer { position: relative; display: flex; justify-content: flex-end; border-top: 1px solid #ffffff20; padding: 26px 0 30px; }
 footer a { font-size: 12px; }
 footer a span { color: var(--green); margin-left: 10px; }
@@ -70,7 +70,8 @@ footer a span { color: var(--green); margin-left: 10px; }
   .title-service { font-size: clamp(38px, 12vw, 80px); }
   .hero-bottom { margin-top: 20px; }
   .cta { font-size: 13px; padding-left: 22px; gap: 28px; }
-  .orbit { width: 170px; bottom: 10px; }
+  .orbit { width: 220px; right: 0; top: 65%; }
+  .orbit-dot { width: 28px; height: 28px; top: calc(50% - 14px); left: -14px; }
   footer { padding: 23px 0; }
 }
 @media (prefers-reduced-motion: reduce) {
