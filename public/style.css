@@ -29,7 +29,7 @@ h1 { width: 100%; text-align: left; margin: 0; position: relative; z-index: 1; f
 .title-brand { display: block; margin-bottom: clamp(12px, 1vw, 38px); animation: enter 1.2s both; }
 .title-brand img { display: block; width: clamp(260px, 23vw, 880px); height: auto; filter: drop-shadow(0 8px 18px #0003); }
 .title-service { font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 600; display: block; width: calc(100% + .055em); margin-inline-start: -.055em; padding: .04em .02em .34em 0; font-size: clamp(64px, 8.9vw, 360px); line-height: 1.25; letter-spacing: -.015em; color: var(--green); background: linear-gradient(110deg, #fff 0%, #6aa334 40%, #fff 65%, #6aa334 100%); background-size: 250% 100%; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 6px 12px #0005) drop-shadow(0 18px 32px #02051840); animation: enter 1.2s .15s both, text-shimmer 18s ease-in-out infinite; }
-.hero-bottom { display: flex; margin-top: 8px; position: relative; z-index: 2; animation: enter 1.2s .3s both; }
+.hero-bottom { display: flex; width: 100%; justify-content: space-between; align-items: center; gap: 32px; margin-top: 8px; position: relative; z-index: 2; animation: enter 1.2s .3s both; }
 .cta { display: inline-flex; align-items: center; gap: clamp(28px, 2vw, 80px); min-height: 76px; padding: 10px 10px 10px 30px; background: var(--green); color: var(--navy); border-radius: 100px; font-size: var(--small); font-weight: 700; border: 1px solid #ffffff12; box-shadow: 0 12px 32px #0003, inset 0 1px 0 #ffffff20; transition: background .25s, transform .25s; }
 .cta:hover { background: #7db747; transform: translateY(-2px); }
 .cta:active { transform: scale(.98); }
@@ -64,3 +64,14 @@ footer { position: relative; padding: clamp(20px, 2vw, 70px) 0; }
 @media (max-width: 900px) { .service-links { grid-template-columns: 1fr; } .service-links a { min-height: 80px; } }
 @media (max-width: 700px) { .page { padding: 0 7%; } header { align-items: flex-start; } .header-contact { gap: 0 20px; } .header-contact a { min-height: 48px; font-size: 20px; } .fullscreen { width: 54px; } .title-brand img { width: 55vw; } .title-service { font-size: 12vw; } .orbit { width: 60vw; } .orbit-dot::before { width: 6vw; } .orbit-inner::after { width: 3.5vw; } main { padding: 24px 0; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } .touch-ripple { display: none; } }
+
+/* Static QR artwork stays sharp and stationary for phone cameras. */
+.qr-panel { position: absolute; right: 0; bottom: 0; display: flex; align-items: center; gap: clamp(18px, 1.5vw, 56px); padding: clamp(16px, 1.2vw, 44px); border: 1px solid #ffffff1c; border-radius: clamp(18px, 1.3vw, 48px); background: #07102d90; transition: background .25s, border-color .25s; }
+.qr-panel:hover { background: #101e4499; border-color: #6aa33470; }
+.qr-code { display: block; width: clamp(112px, 7.5vw, 288px); height: auto; flex-shrink: 0; border-radius: 6px; background: #fff; }
+.qr-copy { display: flex; flex-direction: column; align-items: flex-start; gap: .2em; font-size: var(--small); line-height: 1.35; }
+.qr-label { font-size: 1.15em; }
+.qr-description { opacity: .75; }
+.qr-url { display: inline-flex; align-items: center; gap: 12px; color: #9ac967; margin-top: .35em; }
+.qr-url svg { font-size: .8em; }
+@media (max-width: 900px) { .hero-bottom { align-items: flex-start; flex-direction: column; gap: 28px; } .qr-panel { position: static; } }

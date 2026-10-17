@@ -39,3 +39,7 @@ Pages availability for a private repository depends on the GitHub plan. Configur
 ### If Pages shows this README
 
 Branch-based Pages publishing from `main` → `/ (root)` uses the root `index.html`, which forwards to `public/`. The `.nojekyll` file keeps this a static site. This also works without the Actions workflow. With GitHub Actions as the Pages source, the workflow publishes `public/` directly and the website loads at the repository URL without a redirect.
+
+## QR panel
+
+The phone panel links to `https://elko.is/b2b`. Its QR code is stored locally at `public/images/b2b-qr.svg`, uses medium error correction, and includes a four-module white quiet zone. There is no QR service, tracking redirect, or runtime dependency. Keep the QR stationary and high contrast when restyling it. If the destination changes, regenerate the SVG and update the panel link, visible URL, and accessible label together.
