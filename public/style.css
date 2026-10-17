@@ -1,3 +1,4 @@
+@font-face { font-family: 'Barlow Semi Condensed'; src: url('/fonts/barlow-semi-condensed-semibold.ttf') format('truetype'); font-style: normal; font-weight: 600; font-display: swap; }
 @font-face { font-family: Elkjop; src: url('/fonts/elkjop.woff2') format('woff2'); font-style: normal; font-weight: 400; font-display: swap; }
 :root { color-scheme: dark; --navy: #0f054d; --green: #6aa334; --white: #fff; --small: clamp(20px, 1.35vw, 52px); }
 * { box-sizing: border-box; }
@@ -27,7 +28,7 @@ main { position: relative; isolation: isolate; flex: 1; display: flex; flex-dire
 h1 { width: 100%; text-align: left; margin: 0; position: relative; z-index: 1; font-weight: 700; }
 .title-brand { display: block; margin-bottom: clamp(12px, 1vw, 38px); animation: enter 1.2s both; }
 .title-brand img { display: block; width: clamp(260px, 23vw, 880px); height: auto; filter: drop-shadow(0 8px 18px #0003); }
-.title-service { font-family: Arial, Helvetica, sans-serif; display: block; width: calc(100% + .055em); margin-inline-start: -.055em; padding: .16em .02em .22em 0; font-size: clamp(64px, 8.9vw, 360px); line-height: 1.25; letter-spacing: -.04em; color: var(--green); background: linear-gradient(110deg, #fff 0%, #6aa334 40%, #fff 65%, #6aa334 100%); background-size: 250% 100%; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 6px 12px #0005) drop-shadow(0 18px 32px #02051840); animation: enter 1.2s .15s both, text-shimmer 18s ease-in-out infinite; }
+.title-service { font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 600; display: block; width: calc(100% + .055em); margin-inline-start: -.055em; padding: .16em .02em .22em 0; font-size: clamp(64px, 8.9vw, 360px); line-height: 1.25; letter-spacing: -.015em; color: var(--green); background: linear-gradient(110deg, #fff 0%, #6aa334 40%, #fff 65%, #6aa334 100%); background-size: 250% 100%; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 6px 12px #0005) drop-shadow(0 18px 32px #02051840); animation: enter 1.2s .15s both, text-shimmer 18s ease-in-out infinite; }
 .hero-bottom { display: flex; margin-top: 8px; position: relative; z-index: 2; animation: enter 1.2s .3s both; }
 .cta { display: inline-flex; align-items: center; gap: clamp(28px, 2vw, 80px); min-height: 76px; padding: 10px 10px 10px 30px; background: var(--green); color: var(--navy); border-radius: 100px; font-size: var(--small); font-weight: 700; border: 1px solid #ffffff12; box-shadow: 0 12px 32px #0003, inset 0 1px 0 #ffffff20; transition: background .25s, transform .25s; }
 .cta:hover { background: #7db747; transform: translateY(-2px); }
