@@ -25,3 +25,13 @@ The page is designed for a landscape touchscreen, including 1080p and 4K display
 The top-right fullscreen control appears when the browser supports fullscreen. Touching empty background space produces a brief ripple; interactive links keep their normal behavior. All motion respects the operating system's reduced-motion preference. Touch effects clean themselves up and do not use a continuous JavaScript rendering loop.
 
 Fullscreen is a browser view mode, not operating-system kiosk configuration. Configure the display's browser separately if automatic launch or return to the landing page is required.
+
+## GitHub Pages
+
+The workflow at `.github/workflows/pages.yml` publishes only `public/` on each push to `main`. No Node server, build step, or credentials in the source are required. Asset paths work under the GitHub Pages repository subdirectory.
+
+In the GitHub repository, open **Settings → Pages → Build and deployment**, then select **GitHub Actions** as the source. After enabling it, open **Actions → Deploy website to GitHub Pages → Run workflow** if the initial deployment did not run successfully. Future pushes deploy automatically.
+
+Expected address after successful deployment: https://baldureinar1.github.io/b2b-elko/
+
+Pages availability for a private repository depends on the GitHub plan. Configure the repository's Pages settings before claiming that the site is live.

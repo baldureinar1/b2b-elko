@@ -1,5 +1,5 @@
-@font-face { font-family: 'Barlow Semi Condensed'; src: url('/fonts/barlow-semi-condensed-semibold.ttf') format('truetype'); font-style: normal; font-weight: 600; font-display: swap; }
-@font-face { font-family: Elkjop; src: url('/fonts/elkjop.woff2') format('woff2'); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Barlow Semi Condensed'; src: url('./fonts/barlow-semi-condensed-semibold.ttf') format('truetype'); font-style: normal; font-weight: 600; font-display: swap; }
+@font-face { font-family: Elkjop; src: url('./fonts/elkjop.woff2') format('woff2'); font-style: normal; font-weight: 400; font-display: swap; }
 :root { color-scheme: dark; --navy: #0f054d; --green: #6aa334; --white: #fff; --small: clamp(20px, 1.35vw, 52px); }
 * { box-sizing: border-box; }
 html { min-height: 100%; background: var(--navy); }
