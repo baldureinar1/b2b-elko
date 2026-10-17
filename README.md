@@ -35,3 +35,7 @@ In the GitHub repository, open **Settings → Pages → Build and deployment**, 
 Expected address after successful deployment: https://baldureinar1.github.io/b2b-elko/
 
 Pages availability for a private repository depends on the GitHub plan. Configure the repository's Pages settings before claiming that the site is live.
+
+### If Pages shows this README
+
+Branch-based Pages publishing from `main` → `/ (root)` uses the root `index.html`, which forwards to `public/`. The `.nojekyll` file keeps this a static site. This also works without the Actions workflow. With GitHub Actions as the Pages source, the workflow publishes `public/` directly and the website loads at the repository URL without a redirect.
