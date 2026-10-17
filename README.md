@@ -14,4 +14,4 @@ The server listens on port 3000 (override with `PORT`). Static production files 
 
 ## Brand assets
 
-The page currently uses an ELKO-inspired navy/green palette and a typographic wordmark, rather than an official logo asset. The official Elkjøp font was not available. To use your licensed font, put its WOFF2 file at `public/fonts/elkjop.woff2`; the CSS loads it automatically, with Arial as the fallback. Confirm official color values and replace the wordmark with the approved logo before publishing as an official brand page.
+The page currently uses an ELKO-inspired navy/green palette and a typographic wordmark, rather than an official logo asset. The supplied Elkjøp font is included at `public/fonts/elkjop.woff2` and loads automatically, with Arial as the fallback. Original font files and license information remain in `font/`. Confirm official color values and replace the wordmark with the approved logo before publishing as an official brand page.
