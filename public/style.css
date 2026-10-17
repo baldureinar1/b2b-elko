@@ -35,14 +35,14 @@ h1 { width: 100%; text-align: left; margin: 0; position: relative; z-index: 1; f
 .cta:active { transform: scale(.98); }
 .arrow { display: grid; place-items: center; width: clamp(54px, 3.2vw, 122px); aspect-ratio: 1; background: var(--navy); color: var(--green); border-radius: 50%; font-size: clamp(26px, 1.7vw, 64px); }
 /* Alternate orbital treatment: transparent, behind the heading, CSS-only. */
-.orbit { position: absolute; width: 35vw; aspect-ratio: 1; right: 6%; top: 58%; translate: 0 -50%; z-index: 0; border: 1px solid #7196e512; border-radius: 50%; pointer-events: none; }
-.orbit::before { content: ''; position: absolute; inset: -1px; border-radius: 50%; padding: 2px; background: conic-gradient(from 20deg, transparent 0deg 55deg, #648ee31a 100deg, #8fc76280 145deg, transparent 185deg 255deg, #4d77d04d 300deg, transparent 350deg); mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0); animation: orbit 70s linear infinite; }
+.orbit { position: absolute; width: 35vw; aspect-ratio: 1; right: 10%; top: 60%; translate: 0 -50%; z-index: 0; border: 1px solid #7196e512; border-radius: 50%; pointer-events: none; }
+.orbit::before { content: ''; position: absolute; inset: -1px; border-radius: 50%; padding: 2px; background: conic-gradient(from 270deg, transparent 0deg 235deg, #648ee310 270deg, #648ee350 310deg, #8fc762a0 345deg, #d4eec1cc 359deg, transparent 360deg); mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0); animation: orbit 48s linear infinite; }
 .orbit-inner { position: absolute; inset: 13%; border: 1px solid #6aa3341a; border-radius: 50%; animation: orbit 90s linear infinite reverse; }
 .orbit-inner::before { content: ''; position: absolute; inset: -1px; padding: 1px; border-radius: 50%; background: conic-gradient(from 150deg, transparent 0deg 180deg, #7fa4ff66 255deg, transparent 320deg); mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0); }
 .orbit-inner::after { content: ''; position: absolute; width: .55vw; aspect-ratio: 1; top: 50%; left: 0; translate: -50% -50%; border-radius: 50%; background: #9bcf7a80; box-shadow: 0 0 20px #89bb7a40; }
 .orbit::after { content: ''; position: absolute; inset: -12%; border-radius: 50%; background: radial-gradient(ellipse at 65% 40%, #4674d51a, transparent 58%), radial-gradient(ellipse at 40% 65%, #6aa3340d, transparent 50%); animation: orbit-breathe 16s ease-in-out infinite alternate; }
 .orbit-dot { position: absolute; inset: 0; border-radius: 50%; animation: orbit 48s linear infinite; }
-.orbit-dot::before { content: ''; position: absolute; width: 4vw; aspect-ratio: 1; top: 50%; left: 0; translate: -50% -50%; border-radius: 50%; opacity: .4; background: radial-gradient(circle at 30% 25%, #acdb8a88, #6aa33444 42%, #426dc522 75%, transparent); box-shadow: 0 0 35px #6aa33415, inset 0 0 12px #c8eab21a; }
+.orbit-dot::before { content: ''; position: absolute; width: 3.4vw; aspect-ratio: 1; top: 50%; left: 0; translate: -50% -50%; border-radius: 50%; opacity: .7; background: radial-gradient(circle at 35% 30%, #b4d993, #6aa334 65%, #527f35); box-shadow: 0 0 24px #8fc76230; }
 @keyframes orbit-breathe { from { opacity: .45; transform: scale(.94); } to { opacity: .9; transform: scale(1.06); } }
 
 footer { position: relative; padding: clamp(20px, 2vw, 70px) 0; }
