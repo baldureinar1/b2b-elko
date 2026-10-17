@@ -69,7 +69,7 @@ footer { position: relative; padding: clamp(20px, 2vw, 70px) 0; }
 .qr-panel { position: absolute; right: 0; bottom: 0; display: flex; align-items: center; gap: clamp(18px, 1.5vw, 56px); padding: clamp(16px, 1.2vw, 44px); border: 1px solid #ffffff1c; border-radius: clamp(18px, 1.3vw, 48px); background: #07102d90; transition: background .25s, border-color .25s; }
 .qr-panel:hover { background: #101e4499; border-color: #6aa33470; }
 .qr-code { display: block; width: clamp(112px, 7.5vw, 288px); height: auto; flex-shrink: 0; border-radius: 6px; background: #fff; }
-.qr-copy { display: flex; flex-direction: column; align-items: flex-start; gap: .2em; font-size: var(--small); line-height: 1.35; }
+.qr-copy { font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 600; display: flex; flex-direction: column; align-items: flex-start; gap: .2em; font-size: var(--small); line-height: 1.35; }
 .qr-label { font-size: 1.15em; }
 .qr-description { opacity: .75; }
 .qr-url { display: inline-flex; align-items: center; gap: 12px; color: #9ac967; margin-top: .35em; }
