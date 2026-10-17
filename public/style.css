@@ -95,3 +95,6 @@ footer a { min-height: 36px; line-height: 1.5; }
   footer { align-items: flex-start; gap: 12px; }
   .footer-links { width: 100%; gap: 4px 20px; }
 }
+
+.footer-contact { display: flex; flex-wrap: wrap; gap: 8px 24px; font-style: normal; }
+.footer-contact a { white-space: nowrap; }
