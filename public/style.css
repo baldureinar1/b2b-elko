@@ -99,6 +99,6 @@ footer { position: relative; padding: clamp(20px, 2vw, 70px) 0; }
 }
 
 /* Decorative service icons share a consistent weight and generous touch-card spacing. */
-.service-label { display: flex; align-items: center; gap: .65em; min-width: 0; }
+.service-label { display: flex; flex-flow: row nowrap; align-items: center; gap: .65em; min-width: 0; }
 .service-icon { display: grid; place-items: center; flex: 0 0 1.7em; width: 1.7em; aspect-ratio: 1; border: 1px solid #94bb7024; border-radius: .5em; background: #6aa3340d; }
 .service-icon svg { width: 1em; height: 1em; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
