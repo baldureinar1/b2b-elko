@@ -16,7 +16,7 @@ The server listens on port 3000 (override with `PORT`). Static production files 
 
 The page uses the supplied white-and-green ELKO logo in the main heading, copied unchanged to `public/logos/elko-white.png`. The palette follows the supplied brand reference: Sushi green `#6AA334`, white `#FFFFFF`, and Deep Cove blue `#0F054D`. Original logo assets remain in `logos/`.
 
-The main “Fyrirtækjaráðgjöf” heading uses locally hosted Barlow Semi Condensed SemiBold, with full Icelandic character coverage. Its SIL Open Font License is included at `public/fonts/Barlow-OFL.txt`; the font comes from the Google Fonts repository. Smaller text uses the supplied Elkjøp font, with Arial fallback for its missing Þ, þ, Ð, and ð characters. Original font files and license information remain in `font/`.
+The main “Fyrirtækjaráðgjöf” heading uses the supplied Elkjøp Headline Regular. Contact details and supporting text use Elkjøp Sans Regular, with Medium for buttons, service cards, and QR text. All three fonts were checked for Icelandic character coverage, including Þ, þ, Ð, ð, Æ, æ, Ö, and ö. Original files remain in `font/`; unchanged serving copies are in `public/fonts/`. Barlow and the older body font are retained for comparison but are not loaded on this branch.
 
 ## Touchscreen display
 
