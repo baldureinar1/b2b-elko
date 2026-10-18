@@ -12,7 +12,9 @@ button { font: inherit; color: inherit; cursor: pointer; }
 [hidden] { display: none !important; }
 svg { width: 1em; height: 1em; display: block; fill: none; stroke: currentColor; stroke-width: 1.5; }
 .page { min-height: 100svh; padding: 0 5.2vw; display: flex; flex-direction: column; position: relative; }
-.ambient { position: fixed; inset: 0; overflow: hidden; pointer-events: none; background: radial-gradient(ellipse at 85% 42%, #163b9170, transparent 60%), radial-gradient(ellipse at 14% 0%, #21135f60, transparent 50%), linear-gradient(140deg, #0f054d, #080e30 60%, #030615); }
+.ambient { position: fixed; inset: 0; overflow: hidden; pointer-events: none; background: #080e30; }
+/* Move a single gradient layer rather than repainting the full 4K background each frame. */
+.ambient::before { content: ''; position: absolute; inset: -12%; background: radial-gradient(ellipse at 78% 42%, #1c438d99, transparent 58%), radial-gradient(ellipse at 18% 18%, #30146960, transparent 56%), linear-gradient(135deg, #0f054d 5%, #0a153c 55%, #030615 100%); transform-origin: center; will-change: transform; animation: ambient-flow 48s ease-in-out infinite; }
 .ambient::after { content: ''; position: absolute; inset: 0; background: linear-gradient(100deg, transparent 48%, #4777dc08 65%, transparent 80%); }
 .glow { position: absolute; border-radius: 50%; filter: blur(100px); animation: drift 28s ease-in-out infinite alternate; }
 .glow-one { width: 50vw; height: 50vw; right: -20%; top: 12%; background: #153c9b40; }
@@ -79,3 +81,9 @@ footer { position: relative; padding: clamp(20px, 2vw, 70px) 0; }
 
 .cta-copy { display: flex; flex-direction: column; align-items: flex-start; gap: .1em; line-height: 1.15; }
 .cta-url { font-size: .75em; font-weight: 400; opacity: .8; }
+
+@keyframes ambient-flow {
+  0%, 100% { transform: translate(-3%, -2%) rotate(-2deg) scale(1.02); }
+  50% { transform: translate(3%, 2%) rotate(2deg) scale(1.06); }
+}
+@media (prefers-reduced-motion: reduce) { .ambient::before { will-change: auto; } }
